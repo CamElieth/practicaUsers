@@ -4,7 +4,7 @@ import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
 export class User {
 
     @PrimaryGeneratedColumn({ type: 'int4'}) //este decorador hace referencia al primary key
-    id:number;
+    id?:number;
 
     @Column ({ type: 'varchar', length: 100, nullable: false })
     name: string;

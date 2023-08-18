@@ -4,7 +4,7 @@ export class CreateProductDto {
     
     @IsNotEmpty()
     @IsNumber()
-    id: number;
+    id?: number;
     // los decoradores en el dto validan que la info que se agregue sea la correcta
 
     @IsString()
